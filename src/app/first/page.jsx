@@ -12,15 +12,25 @@ export default function Home() {
     setLoading(true);
     setRecipe("");
 
-    const res = await fetch("/api/generate-recipe", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ingredients, visual, simple }),
-    });
+    try {
+      const res = await fetch("/api/generate-recipe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ingredients, visual, simple }),
+      });
 
-    const data = await res.json();
-    setRecipe(data.recipe);
-    setLoading(false);
+      const data = await res.json();
+      
+      if (data.error) {
+        setRecipe(`Error: ${data.error}`);
+      } else {
+        setRecipe(data.recipe);
+      }
+    } catch (error) {
+      setRecipe(`Error: ${error.message}`);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -28,7 +38,7 @@ export default function Home() {
       <h1 className="text-4xl font-bold mb-4 text-amber-800">🍳 Recipe Generator</h1>
 
       <textarea
-        className="w-full max-w-lg border rounded-lg p-3 mb-3 text-gray-700"
+        className="w-full max-w-lg border rounded-lg p-3 mb-3 text-black"
         rows="3"
         placeholder="Enter ingredients (e.g., chicken, rice, garlic)"
         value={ingredients}
