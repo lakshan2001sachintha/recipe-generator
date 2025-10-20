@@ -68,7 +68,7 @@ export default function Home() {
 }}
 
     >
-      <h1 className="text-6xl font-bold mb-4 text-orange-500 font-normal">Enter Your Ingredians..</h1>
+      <h1 className="text-6xl font-bold mb-4 text-orange-500">Enter Your Ingredients..</h1>
 
       {/* Creative input: Tag chips + textarea fallback */}
       <div className="w-full max-w-2xl flex flex-col gap-3 items-center">
