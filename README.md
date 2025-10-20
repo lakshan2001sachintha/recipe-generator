@@ -5,7 +5,7 @@ A modern web application that generates delicious food recipes based on user inp
 ## Demo 
 
 Include a live demo link if available:  
-[https://fantastic-bonbon-73d3c6.netlify.app/first](#)
+https://fantastic-bonbon-73d3c6.netlify.app/first
 
 ## Features
 
