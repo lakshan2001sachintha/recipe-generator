@@ -76,7 +76,7 @@ export default function TagInput({ value = [], onChange, placeholder = 'Add ingr
          onClick={() => inputRef.current?.focus()}
          aria-label="Ingredients input as tags">
       {value.map((tag, idx) => (
-        <span key={idx} className="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-2 py-1 rounded-full text-sm">
+        <span key={idx} className="inline-flex items-center gap-2 bg-amber-100 text-amber-800 font-medium px-2 py-1 rounded-full text-sm">
           {tag}
           <button type="button" className="hover:text-amber-900" onClick={(e) => { e.stopPropagation(); removeAt(idx); }} aria-label={`Remove ${tag}`}>
             ×
