@@ -2,10 +2,11 @@
 
 A modern web application that generates delicious food recipes based on user inputs, powered by **Next.js** and the **Gemini API**. This app allows users to discover new dishes effortlessly by simply specifying ingredients, cuisine types, or dietary preferences.
 
-## Demo 
+## Deployment
 
-Include a live demo link if available:  
-https://fantastic-bonbon-73d3c6.netlify.app/first
+Vercel - https://recipe-generator-xi-rust.vercel.app/first  
+Netlify -https://fantastic-bonbon-73d3c6.netlify.app/first
+
 
 ## Features
 
