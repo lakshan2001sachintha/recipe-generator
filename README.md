@@ -2,7 +2,7 @@
 
 A modern web application that generates delicious food recipes based on user inputs, powered by **Next.js** and the **Gemini API**. This app allows users to discover new dishes effortlessly by simply specifying ingredients, cuisine types, or dietary preferences.
 
-docker image -  lakshan2001sachintha/recipe-app:latest
+docker image 🐳 -  lakshan2001sachintha/recipe-app:latest
 
 ## Deployment
 
